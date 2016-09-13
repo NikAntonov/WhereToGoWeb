@@ -1,0 +1,33 @@
+@media only screen and (max-width: 480px) {
+
+    .logo {
+        width: 200px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .logo {
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .logo {
+        width: 180px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+    #form-mdf {
+        width: 65%;
+    }
+
+}

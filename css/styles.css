@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.starter-template {
+  padding: 0px 15px;
+  text-align: center;
+}
+
+table {
+  text-align: center;
+  border: solid 50px transparent;
+}
+
+.panel-footer {
+  text-align: center;
+}
+
+.jumbotron {
+  color: white;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-clip: border-box;
+}
+.navbar-brand {
+  color: white!important;
+}
+
+li#controls {
+  color: white;
+}
+
+td, tr {
+  border: solid 50px transparent;
+}
+
+#jumbotron-main {
+  background: url("../images/bg-jumbotron-mdf.jpg") center;
+  padding-top: 250px;
+  display: block;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.btn-primary {
+  background-color: #ff9800;
+  border-color: #fb8c00;
+}
+
+a:hover.btn-primary, #button-input {
+  background-color: #f57c00;
+  border-color: #ef6c00;
+}
+
+#jumbotron-workswith {
+  background: url("../images/bg-workswith-mdf.jpg") center;
+  text-align: center;
+  display: block;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.col-sm-8 {
+  padding: 10%;
+  text-align: center;
+}
+
+#logos-row {
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  text-align: center!important;
+}
+
+#jumbotron-connect {
+  background: url("../images/bg-workswith-mdf.jpg") center;
+  text-align: center;
+  display: block;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+input,textarea.input-connectform {
+  border-radius: 8px;
+  height: 50px;
+  width: 100%;
+  border: 3px solid #ff9800;
+  padding: 10px;
+}
+
+.header-connectform {
+  padding: 10px;
+}
+
+#message {
+  height: 200px;
+  padding: 30px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#jumbotron-contact {
+  text-align: left;
+  padding-top: 25px;
+  background: url("../images/bg-contact-mdf.jpg") center; ;
+}
+
+input, textarea {
+  color: #3c3c3c;
+}
+
+@font-face {
+  font-family: Reef;
+  src: url(../fonts/Reef.otf) format("opentype");
+}
+
+h1.jumbotron {
+  font-family: 'Reef', "Open Sans", ;
+}
+
+
