@@ -37,7 +37,8 @@ td, tr {
 
 #jumbotron-main {
   background: url("../images/bg-jumbotron-mdf.jpg") center;
-  padding-top: 250px;
+  padding-top: 350px;
+    height: 100vh;
   display: block;
   background-size: cover;
   background-clip: border-box;
@@ -180,4 +181,23 @@ li#custom-nav {
 
 .navbar-inverse .navbar-nav>li>a {
   color: white;
+}
+
+button.navbar-toggle {
+    background-color: transparent;
+}
+
+button.affix {
+    background-color: #333333;
+}
+
+.parallax {
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
