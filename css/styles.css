@@ -87,7 +87,7 @@ input,textarea.input-connectform {
   border-radius: 8px;
   height: 50px;
   width: 100%;
-  border: 3px solid #ff9800;
+  border: 3px none #ff9800;
   padding: 10px;
 }
 
@@ -117,8 +117,67 @@ input, textarea {
   src: url(../fonts/Reef.otf) format("opentype");
 }
 
-h1.jumbotron {
-  font-family: 'Reef', "Open Sans", ;
+#custom-nav {
+  color: #ffffff;
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  box-shadow: none;
+  z-index: 999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+  -moz-transition: background .5s ease-in-out, opacity .5s ease;
+  transition: background .5s ease-in-out, opacity .5s ease;
 }
 
+li#custom-nav {
+  color: #ffffff!important;
+}
 
+#custom-nav.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+  -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+  transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+}
+
+#custom-nav.affix {
+  top: 0;
+  min-width: 100%;
+  background-color: #333333;
+  opacity: 1;
+
+  -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+  -moz-transition: background .5s ease-in-out, opacity .5s ease;
+  transition: background .5s ease-in-out, opacity .5s ease;
+}
+
+#custom-nav .dropdown-menu {
+  border-radius: 0;
+  border: none;
+  border-top: 5px solid transparent;
+  background-color: #333333;
+  opacity: 0.8;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-top: 0;
+}
+
+.navbar-toggle {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.collapse {
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
