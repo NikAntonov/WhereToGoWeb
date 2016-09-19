@@ -40,3 +40,19 @@
         z-index: 999;
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+    #jumbotron-main {
+        padding-top: 250px;
+    }
+
+}
+
+@media only screen and (max-height: 400px) {
+
+    #jumbotron-main {
+        padding-top: 100px;
+    }
+
+}
