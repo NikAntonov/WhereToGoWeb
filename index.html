@@ -33,6 +33,23 @@
     <script src="js/google-analytics.min.js"></script>
     <script src="js/navbar-collapse.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('a[href^="#"]').click(function () {
+            elementClick = $(this).attr("href");
+            destination = $(elementClick).offset().top;
+            if($.browser.safari){
+                $('body').animate( { scrollTop: destination }, 1100 );
+            }else{
+                $('html').animate( { scrollTop: destination }, 1100 );
+            }
+            return false;
+        });
+    });
+    </script>
+
+    <script src="js/scroll-anchor.js"></script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
@@ -62,7 +79,7 @@
         <div class="collapse navbar-collapse navbar-right custom-controls" id="controls">
             <ul class="nav navbar-nav">
                 <li><a href="index.html#about">О проекте</a></li>
-                <li><a href="index.html#jumbotron-contact">Контакты</a></li>
+                <li><a href="index.html#download">Контакты</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -144,31 +161,56 @@
         <h1 style="padding-bottom: 25px">Наша небольшая команда</h1>
         <div class="main-carousel" style="padding-bottom: 25px" data-flickity='{ "cellAlign": "left", "contain": true }'>
             <div class="carousel-cell">
-                <img src="thumbnails/antonov.png"/>
-                <h2>Никита Антонов</h2>
-                <h4>Идея, Android & Web разработчик</h4>
-                <p class="lead">Я отошлю немного задач завтра, отдохни пока что... Я сейчас на БалтАртеке... В Москве...
-                    В горах :)</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="thumbnails/antonov.png"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Никита Антонов</h2>
+                        <h4>Идея, Android & Web разработчик</h4>
+                        <p class="lead">Я отошлю немного задач завтра, отдохни пока что... Я сейчас на БалтАртеке... В Москве...
+                            В горах :)</p>
+                    </div>
+                </div>
             </div>
             <div class="carousel-cell">
-                <img src="thumbnails/blagovestnuy.png"/>
-                <h2>Иван Благовестный</h2>
-                <h4>Web разработчик (Cloud)</h4>
-                <p class="lead">На каком языке будем писать сервер? Давай использовать Python. Хотя, может лучше
-                    использовать Go? Ну я не знаю... Я думаю, лучше использовать Python. </p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="thumbnails/blagovestnuy.png"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Иван Благовестный</h2>
+                        <h4>Web разработчик (Cloud)</h4>
+                        <p class="lead">На каком языке будем писать сервер? Давай использовать Python. Хотя, может лучше
+                            использовать Go? Ну я не знаю... Я думаю, лучше использовать Python. </p>
+                    </div>
+                </div>
             </div>
             <div class="carousel-cell">
-                <img src="thumbnails/duidik.png"/>
-                <h2>Анна Дидык</h2>
-                <h4>Проект-Менеджер</h4>
-                <p class="lead">У меня же есть возможность менеджерить! Я вас закомандую до ужаса!</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="thumbnails/duidik.png"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Анна Дидык</h2>
+                        <h4>Проект-Менеджер</h4>
+                        <p class="lead">У меня же есть возможность менеджерить! Я вас закомандую до ужаса!</p>
+                    </div>
+                </div>
             </div>
             <div class="carousel-cell">
-                <img src="thumbnails/skabuickaya.png"/>
-                <h2>Юлия Скабицкая</h2>
-                <h4>Ментор проекта</h4>
-                <p class="lead">Кто первый найдет ошибку в коде, тому без разговоров поставлю пятерку =)
-                    Любимая ваша ошибка, между прочим))</p>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="thumbnails/skabuickaya.png"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Юлия Скабицкая</h2>
+                        <h4>Ментор проекта</h4>
+                        <p class="lead">Кто первый найдет ошибку в коде, тому без разговоров поставлю пятерку =)
+                            Любимая ваша ошибка, между прочим))</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

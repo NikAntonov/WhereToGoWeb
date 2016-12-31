@@ -38,7 +38,7 @@ td, tr {
 #jumbotron-main {
   background: url("../images/bg-jumbotron-mdf.jpg") center ;
   padding-top: 350px;
-    height: 100vh;
+  height: 100vh;
   display: block;
   background-size: cover;
   background-clip: border-box;
@@ -189,7 +189,7 @@ button.affix {
 
 .carousel-cell {
   width: 100%; /* full width */
-  height: 390px; /* height of carousel */
+  height: 260px; /* height of carousel */
   margin-right: 10px;
 }
 
@@ -220,4 +220,8 @@ button.affix {
 }
 .flickity-prev-next-button.next {
   right: -40px;
+}
+
+[id^=section] {
+  margin-bottom: 100%;
 }
