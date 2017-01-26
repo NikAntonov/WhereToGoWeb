@@ -13,8 +13,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/jumbotron.css"/>
     <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet"/>
-    <link href="css/media.css" rel="stylesheet"/>
+    <link href="css/styles.css?t=07012017" rel="stylesheet"/>
+    <link href="css/media.css?t=07012017" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/flickity.css" media="screen">
     <link rel="stylesheet" href="css/flickity.min.css" media="screen">
@@ -32,36 +32,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/google-analytics.min.js"></script>
     <script src="js/navbar-collapse.js"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('a[href^="#"]').click(function () {
-            elementClick = $(this).attr("href");
-            destination = $(elementClick).offset().top;
-            if($.browser.safari){
-                $('body').animate( { scrollTop: destination }, 1100 );
-            }else{
-                $('html').animate( { scrollTop: destination }, 1100 );
-            }
-            return false;
-        });
-    });
-    </script>
+    <script src="js/parallax.js"></script>
 
     <script src="js/scroll-anchor.js"></script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/icons/manifest.json">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-</head>
 
 <body>
 
@@ -74,17 +47,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Route'N'Go</a>
+            <a class="navbar-brand" href="#">Route'N'Go</a>
         </div>
         <div class="collapse navbar-collapse navbar-right custom-controls" id="controls">
             <ul class="nav navbar-nav">
-                <li><a href="index.html#about">О проекте</a></li>
-                <li><a href="index.html#download">Контакты</a></li>
+                <li><a href="#about">О проекте</a></li>
+                <li><a href="#download">Контакты</a></li>
+                <li><a href="admin">Войти</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </div>
 
+<div class="bg"></div>
 <div class="jumbotron" id="jumbotron-main">
     <div class="container">
         <h1>Что это?</h1>
@@ -125,11 +100,41 @@
                     устройство. Кафе с бесплатным WiFi на каждом шагу не нужны.</p>
             </div>
         </div>
+
+        <br>
+        <h1 style="padding-bottom: 25px">Наши приемущества</h1>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <img src="thumbnails/nexus5-art-1.png"/>
+            </div>
+            <div class="col-sm-7">
+                <ul style="text-align: left;">
+                    <li>
+                        <p class="lead"><b>Простота использования</b><br>
+                            Привычный дизайн делает приложение понятным с первого взгляда
+                        </p>
+                    </li>
+                    <li>
+                        <p class="lead"><b>Мультиязычность</b><br>
+                            Наше приложение полностью переведено на русский, английский, литовксий, польски и немецкий языки.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="lead"><b>Оффлайн доступ</b><br>
+                            Все карты города будут сохранены на устройство вместе с местами города
+                        </p>
+                    </li>
+                    <p class="lead">...И многое другое!</p>
+                </ul>
+            </div>
+        </div><br><br>
     </div>
 
 </div><!-- /.container -->
+
 <div class="jumbotron" id="jumbotron-workswith">
-    <h1>С нами уже работают:</h1>
+    <h1>Нас поддерживают:</h1>
     <div class="row" id="logos-row">
         <div class="col-sm-4">
             <a href="http://dc.baltinform.ru/"><img class="logo" src="images/crod_logo.png"></a>
@@ -148,7 +153,7 @@
     <div class="starter-template" id="download">
 
         <div>
-            <h1>Хочу помочь проекту!</h1>
+            <h1>Где скачать?</h1>
             <p class="lead">Наше приложение сегодня активно разрабатывается для устройств на платформе Android, но нам
                 очень многое надо сделать прежде чем приложение увидит свет. Вы всегда можете присоединиться к нам в
                 команду и создавать вместе с нами самый иновационный гид по городу. Мы всегда открыты для сотрудничества :)</p>
