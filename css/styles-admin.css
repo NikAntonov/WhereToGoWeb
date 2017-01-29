@@ -2,14 +2,24 @@
 
 #primary-menu > ul > li a:hover{
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  color: black;
-  background-color: white;
-}#primary-menu > ul > li{
-  padding-right: 5px;
-   text-align: center
+  color: #F90;
+
+}
+#primary-menu > ul > li:last-child a:hover{
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: #F90;
+
 }
 #primary-menu > ul > li{
+   padding-right: 5px;
+   text-align: center
+ }
+#primary-menu > ul > li{
   padding-right: 5px;
+  text-align: center
+}
+#primary-menu > ul > li:last-child{
+  padding-right: 0;
   text-align: center
 }
 
@@ -29,13 +39,13 @@
 }
 #primary-menu > ul > li:first-child a:hover {
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  color: black;
+  color: #F90;
   padding: 5px;
   margin-top: 8px;
 }
 #primary-menu > ul > li:nth-child(2) a:hover {
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  color: black;
+  color: #F90;
   padding: 5px;
   margin-top: 8px;
 }
@@ -76,16 +86,27 @@ body {
 .col-md-3{
 text-align: center;
 }
-    .add{
-        -webkit-border-radius: 28px;
-        -moz-border-radius: 28px;
-        border-radius: 28px;
-        color: #ffffff;
-      border: solid #ffffff 1px;
-        text-decoration: none;
-        padding: 0;
-        margin: 0;
-    }
+.bt-circle{
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    color: #ffffff;
+  border: solid #ffffff 1px;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.bt-circle:hover
+{
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  color: #F90;
+  border: solid #F90 1px;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
 
 .list_view >li{
 list-style:none;
@@ -395,13 +416,13 @@ h1{
 }
 
               /*LOADER*/
-.loader
-{
-  background-image: url("/img/ajax-loader.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px;
-}
+/*.loader*/
+/*{*/
+  /*background-image: url('../admin/img/ajax-loader.gif') no-repeat center center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*height: 100px;*/
+/*}*/
               /*HEADER*/
 
 

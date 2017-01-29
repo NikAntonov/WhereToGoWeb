@@ -11,12 +11,9 @@
         </div>
         <div id="primary-menu" class="collapse navbar-collapse navbar-right custom-controls" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft id="controls">
             <ul class="nav navbar-nav">
-                <li><a href="add_place.php" class="add">Добавить</a>
-                <li><a href="delete_all.php" class="add">Удалить всё</a></li>
-                <li><a href="logout.php" >Выйти</a>
-
-
-                </li>
+                <li><a href="add_place.php" class="bt-circle">Добавить</a>
+                <li><a href="delete_all.php" class="bt-circle">Удалить всё</a></li>
+                <li><a href="logout.php">Выйти</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

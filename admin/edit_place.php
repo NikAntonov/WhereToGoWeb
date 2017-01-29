@@ -4,7 +4,7 @@
 
     if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
     {
-        header("Loacation: login.php");
+        header("Location: login.php");
     }
 
 
@@ -12,6 +12,49 @@
 
     $place = mysqli_query($connection, "SELECT * FROM `places` WHERE `id` = ".(int)$place_id);
     $place_edit = mysqli_fetch_assoc($place);
+
+$name = $_POST['name'];
+$name_en = $_POST['name_en'];
+$name_pl = $_POST['name_pl'];
+$name_de = $_POST['name_de'];
+$name_lt = $_POST['name_lt'];
+
+$description = $_POST['description'];
+$description_en = $_POST['description_en'];
+$description_pl = $_POST['description_pl'];
+$description_de = $_POST['description_de'];
+$description_lt = $_POST['description_lt'];
+
+$country = $_POST['country'];
+$country_en = $_POST['country_en'];
+$country_pl = $_POST['country_pl'];
+$country_de = $_POST['country_de'];
+$country_lt = $_POST['country_lt'];
+
+$city = $_POST['city'];
+$city_en = $_POST['city_en'];
+$city_pl = $_POST['city_pl'];
+$city_de = $_POST['city_de'];
+$city_lt = $_POST['city_lt'];
+
+$region = $_POST['region'];
+$image_url = $_POST['image_url'];
+$website_url = $_POST['website_url'];
+$x_latLng = $_POST['x_latLng'];
+$y_latLng = $_POST['y_latLng'];
+$time = $_POST['time'];
+
+if (isset($_POST['do_edit']))
+{
+    mysqli_query($connection, "UPDATE `places` SET `name` = '$name', `name_en` = '$name_en', `name_pl` = '$name_pl', `name_de` = '$name_de', `name_lt` = '$name_lt',
+                                  `description` = '$description', `description_en` = '$description_en', `description_pl` = '$description_pl', `description_de` = '$description_de', `description_lt` = '$description_lt',
+                                  `country` = '$country', `country_en` = '$country_en', `country_pl` = '$country_pl', `country_de` = '$country_de', `country_lt` = '$country_lt', 
+                                  `city` = '$city', `city_en` = '$city_en', `city_pl` = '$city_pl', `city_de` = '$city_de', `city_lt` = '$city_lt', 
+                                  `region` = '$region',`image_url` = '$image_url', `website_url` = '$website_url', `x_latLng` = '$x_latLng', `y_latLng` = '$y_latLng', `time` = '$time' 
+                                  WHERE `id` = '$place_id'");
+
+    header("Location: login.php");
+}
 
 ?>
 
@@ -28,7 +71,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom styles for this template -->
-    <link href="media/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/styles-admin.css" rel="stylesheet" type="text/css"/>
     <link href="media/css/media.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -37,7 +80,7 @@
 ?>
 <div class="main">
 <div class="container padding">
-    <form class="well form-horizontal item_card nohover" action="admin_page.php?id=<?php echo $place_id; ?>" method="POST" id="edit_form">
+    <form class="well form-horizontal item_card nohover" action="edit_place.php?id=<?php echo $place_id; ?>" method="POST" id="edit_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -352,7 +395,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="media/js/script.js" type="text/javascript"></script>
+<script src="../js/script.js" type="text/javascript"></script>
 <script type="text/javascript">
    function show_modal() {
       $('#myModal').modal('show');
