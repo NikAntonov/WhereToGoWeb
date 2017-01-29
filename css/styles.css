@@ -1,120 +1,62 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-
 .starter-template {
   padding: 0px 15px;
   text-align: center;
 }
-
-table {
-  text-align: center;
-  border: solid 50px transparent;
-}
-
 .panel-footer {
   text-align: center;
 }
-
-.jumbotron {
-    color: white;
-
-}
-
 .jumbotron {
   color: white;
   width: 100%;
   display: block;
   background-size: cover;
   background-clip: border-box;
-    text-shadow: #444 0 1px 1px;
     background:transparent;
 }
 .navbar-brand {
   color: white!important;
 }
-
 li#controls {
   color: white;
 }
-
-td, tr {
-  border: solid 50px transparent;
-}
-
-#jumbotron-main {
-  padding-top: 350px;
-  height: 100vh;
-  display: block;
-    color: white;
-}
-
 .btn-primary {
   background-color: #ff9800;
   border-color: #fb8c00;
 }
-
 a:hover.btn-primary, #button-input {
   background-color: #f57c00;
   border-color: #ef6c00;
 }
-
-#jumbotron-workswith {
-  background: url("../images/bg-workswith-mdf.jpg") center;
-  text-align: center;
-  display: block;
-  background-size: cover;
-  background-clip: border-box;
-}
-
 .col-sm-8 {
   padding: 10%;
   text-align: center;
 }
-
 #logos-row {
   padding: 15px;
   text-align: center;
 }
-
 footer {
   text-align: center!important;
+  color: white;
 }
-
-input,textarea.input-connectform {
-  border-radius: 8px;
-  height: 50px;
-  width: 100%;
-  border: 3px none #ff9800;
-  padding: 10px;
-}
-
-.header-connectform {
-  padding: 10px;
-}
-
 #message {
   height: 200px;
   padding: 30px;
   min-width: 100%;
   max-width: 100%;
 }
-
 #jumbotron-contact {
   text-align: left;
   padding-top: 25px;
   background: url("../images/bg-contact-mdf.jpg") center; ;
 }
-
-input, textarea {
-  color: #3c3c3c;
-}
-
 @font-face {
   font-family: Reef;
   src: url(../fonts/Reef.otf) format("opentype");
 }
-
 #custom-nav {
   color: #ffffff;
   background-color: rgba(0,0,0,0);
@@ -127,11 +69,9 @@ input, textarea {
   -moz-transition: background .5s ease-in-out, opacity .5s ease;
   transition: background .5s ease-in-out, opacity .5s ease;
 }
-
 li#custom-nav {
   color: #ffffff!important;
 }
-
 #custom-nav.affix {
   top: 0;
   min-width: 100%;
@@ -142,7 +82,6 @@ li#custom-nav {
   -moz-transition: background .5s ease-in-out, opacity .5s ease;
   transition: background .5s ease-in-out, opacity .5s ease;
 }
-
 #custom-nav .dropdown-menu {
   border-radius: 0;
   border: none;
@@ -154,75 +93,57 @@ li#custom-nav {
   box-shadow: none;
   padding-top: 0;
 }
-
 .navbar-toggle {
   border: none;
   background-color: transparent;
 }
-
 .navbar-collapse {
   border: none;
 }
-
 .collapse {
   background-color: transparent;
 }
-
 .navbar-inverse .navbar-nav>li>a {
   color: white;
 }
-
 button.navbar-toggle {
     background-color: transparent;
 }
-
 button.affix {
     background-color: #333333;
 }
-
 .social {
   height: 37px;
 }
-
 .carousel-cell {
   width: 100%; /* full width */
   height: 260px; /* height of carousel */
   margin-right: 10px;
 }
-
 .main-carousel {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
-/* smaller, dark, rounded square */
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background: #333;
+#jumbotron-workswith {
+  background: url("../images/bg-workswith-mdf.jpg") center;
+  text-align: center;
+  display: block;
+  background-size: cover;
+  background-clip: border-box;
 }
-.flickity-prev-next-button:hover {
-  background: #F90;
+#jumbotron-soon {
+  background: transparent center;
+  text-align: center;
+  display: block;
+  height: 200px;
+  background-size: cover;
+  background-clip: border-box;
 }
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: white;
-}
-.flickity-prev-next-button.no-svg {
+#jumbotron-main {
+  padding-top: 350px;
+  height: 100vh;
+  display: block;
   color: white;
 }
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
-}
-
-[id^=section] {
-  margin-bottom: 100%;
-}
-
 .bg {
     background: url('../images/bg-jumbotron-mdf.jpg') no-repeat center center;
     position: fixed;
@@ -232,9 +153,104 @@ button.affix {
     left:0;
     z-index: -1;
 }
-
-footer {
-    background-color: whitesmoke;
+.bgsoon {
+  background: url('../images/bg-contact-mdf.jpg') no-repeat center center;
+  width: 100%;
+  height: 200px; /*same height as jumbotron */
+  /*top: 300px;*/
+  left:0;
+  z-index: -1;
 }
 
+
+td {
+  padding: 50px;
+}
+
+
+.facts {
+  margin-top: -30px;
+  padding: 50px 0 60px 0;
+  background: #222;
+}
+.facts .single {
+  text-align: center;
+}
+.facts .single i {
+  color: #ffffff;
+  font-size: 70px;
+}
+.facts .single h2 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 300;
+}
+.facts .single h6 {
+  font-size: 18px;
+  color: #FF9800;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.flickity-page-dots {
+  bottom: 0px;
+}
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #333;
+}
+.flickity-prev-next-button:hover {
+  background: #F90;
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+[id^=section] {
+  margin-bottom: 100%;
+}
+
+
+.panel {
+  text-align: center;
+}
+.panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
+.panel-body {
+  padding: 0px;
+  text-align: center;
+}
+.the-price {
+  background-color: rgba(220,220,220,.17);
+  box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+  padding: 20px;
+  margin: 0;
+}
+.the-price h1 {
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+}
+.subscript {
+  font-size: 25px;
+}
 
