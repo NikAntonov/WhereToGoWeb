@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3307
--- Время создания: Янв 14 2017 г., 21:59
+-- Время создания: Янв 29 2017 г., 20:12
 -- Версия сервера: 5.5.50
 -- Версия PHP: 5.5.37
 
@@ -54,7 +54,14 @@ CREATE TABLE IF NOT EXISTS `places` (
   `x_latLng` double NOT NULL,
   `y_latLng` double NOT NULL,
   `time` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `places`
+--
+
+INSERT INTO `places` (`id`, `name`, `name_en`, `name_pl`, `name_de`, `name_lt`, `description`, `description_en`, `description_pl`, `description_de`, `description_lt`, `country`, `country_en`, `country_pl`, `country_de`, `country_lt`, `city`, `city_en`, `city_pl`, `city_de`, `city_lt`, `region`, `image_url`, `website_url`, `x_latLng`, `y_latLng`, `time`) VALUES
+(42, 'Кафедральный собор', 'Konigsberg Cathedral', 'Konigsberg Cathedral', 'Konigsberg Cathedral', 'Konigsberg Cathedral', 'Lorem ipsum dolor sit amet consecteur in silva nigra. Silentium est aurum!', 'Lorem ipsum dolor sit amet consecteur in silva nigra. Silentium est aurum!', 'Lorem ipsum dolor sit amet consecteur in silva nigra. Silentium est aurum!', 'Lorem ipsum dolor sit amet consecteur in silva nigra. Silentium est aurum!', 'Lorem ipsum dolor sit amet consecteur in silva nigra. Silentium est aurum!', 'Россия', 'Russia', 'Russia', 'Russia', 'Russia', 'Калининград', 'Kaliningrad', 'Kaliningrad', 'Kaliningrad', 'Kaliningrad', 39, 'http://routengo.pe.hu/images/ba_logo.png', 'http://routengo.pe.hu/', 3.25, 3.25, '2001-12-24 17:45:31');
 
 -- --------------------------------------------------------
 
@@ -99,7 +106,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `places`
 --
 ALTER TABLE `places`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=43;
 --
 -- AUTO_INCREMENT для таблицы `users`
 --

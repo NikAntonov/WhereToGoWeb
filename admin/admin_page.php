@@ -2,7 +2,7 @@
 
     if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
     {
-        header("Location: index.php");
+        header("Location: login.php");
     }
     else{
 ?>

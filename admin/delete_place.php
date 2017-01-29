@@ -2,7 +2,7 @@
 
 if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
 {
-    header("Location: index.php");
+    header("Location: login.php");
 }else
 {
 
@@ -10,9 +10,9 @@ if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
     {
         $id = $_GET['del'];
         mysqli_query($connection,"DELETE FROM `places` WHERE `id` = '$id'");
-        header("Location: index.php");
+        header("Location: login.php");
     }else
     {
-        header("Location: index.php");
+        header("Location: login.php");
     }
 }

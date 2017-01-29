@@ -2,4 +2,4 @@
 
 
     unset($_SESSION['loggedin']);
-    header("Location: index.php");
+    header("Location: ../index.html");
