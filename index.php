@@ -27,6 +27,7 @@
     <link href="css/jumbotron.css"/>
     <!-- Custom styles for this template -->
     <link href="css/styles.css?t=07012017" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
     <link href="css/media.css?t=07012017" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/flickity.css" media="screen">
@@ -41,13 +42,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/google-analytics.min.js"></script>
-    <script src="js/navbar-collapse.js"></script>
-    <script src="js/parallax.js"></script>
 
-    <script src="js/scroll-anchor.js"></script>
 
 <body>
 
@@ -72,15 +67,15 @@
     </div>
 </div>
 
-<div class="bg"></div>
+<header class="parallax-window" data-parallax="scroll" data-image-src="images/bg-jumbotron-mdf.jpg">
 <div class="jumbotron" id="jumbotron-main">
     <div class="container">
         <h1>Что это?</h1>
         <p>Это один из самых невероятных способов узнать наш город</p>
-        <p><a class="btn btn-primary btn-lg" href="#about" role="button">Узнать больше &raquo;</a></p>
+        <p><a class="bt-circle" href="#about">Узнать больше &raquo;</a></p>
     </div>
 </div>
-
+</header>
 <div class="container" id="about">
 
     <div class="starter-template">
@@ -146,7 +141,7 @@
 
 </div><!-- /.container -->
 
-<div class="jumbotron" id="jumbotron-workswith">
+<div class="jumbotron parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-workswith-mdf.jpg" >
     <div class="starter-template" id="tech">
         <h1 style="padding-bottom: 25px">Наша небольшая команда</h1>
         <div class="main-carousel" style="padding-bottom: 25px" data-flickity='{ "cellAlign": "left", "contain": true }'>
@@ -415,6 +410,13 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/google-analytics.min.js"></script>
+<script src="js/navbar-collapse.js"></script>
+<script src="js/parallax.min.js"></script>
+
+<script src="js/scroll-anchor.js"></script>
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 
 <?php

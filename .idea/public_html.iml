@@ -17,15 +17,5 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library name="PHP" type="php">
-        <CLASSES>
-          <root url="file://C:/Program Files/Java/jdk1.8.0_51/jre/bin" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://C:/Program Files/Java/jdk1.8.0_51/jre/bin" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
