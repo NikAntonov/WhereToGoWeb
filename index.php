@@ -9,6 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <title>Route'N'Go</title>
 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=gAEzopl0rd">
+    <link rel="icon" type="image/png" href="/icons/favicon-32x32.png?v=gAEzopl0rd" sizes="32x32">
+    <link rel="icon" type="image/png" href="/icons/favicon-16x16.png?v=gAEzopl0rd" sizes="16x16">
+    <link rel="manifest" href="/icons/manifest.json?v=gAEzopl0rd">
+    <link rel="shortcut icon" href="/icons/favicon.ico?v=gAEzopl0rd">
+    <meta name="apple-mobile-web-app-title" content="Route'N'Go">
+    <meta name="application-name" content="Route'N'Go">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png?v=gAEzopl0rd">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml?v=gAEzopl0rd">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/jumbotron.css"/>
@@ -297,8 +310,7 @@
                         </table>
                     </div>
                     <div class="panel-footer">
-                        <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                        1 month FREE trial</div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-3">
@@ -309,7 +321,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="the-price">
-                            <h1>$4-10</h1>
+                            <h1>$3-6</h1>
                         </div>
                         <table class="table">
                             <tr>
@@ -330,8 +342,7 @@
                         </table>
                     </div>
                     <div class="panel-footer">
-                        <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                        1 month FREE trial</div>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-3">
@@ -342,7 +353,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="the-price">
-                            <h1>$10</h1>
+                            <h1>$6+</h1>
                         </div>
                         <table class="table">
                             <tr>
@@ -363,11 +374,28 @@
                         </table>
                     </div>
                     <div class="panel-footer">
-                        <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                        1 month FREE trial</div>
+                    </div>
+                    <div class="modal fade" id="modaldonate">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Пожертвовать</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=410013245041792&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%9D%D0%B0+%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5+Route'N'Go&target-visibility=on&project-name=Route'N'Go&project-site=routengo.pe.hu&button-text=05&fio=on&mail=on&phone=on&successURL=" width="422" height="117"></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <a class="btn btn-success" role="button" data-toggle="modal" data-target="#modaldonate">Пожертвовать</a>
     </div>
 
 </div>
@@ -390,7 +418,7 @@
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 
 <?php
-include "/admin/includes/footer.php";
+include "admin/includes/footer.php";
 ?>
 
 </body>
