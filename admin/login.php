@@ -146,7 +146,7 @@ $count = mysqli_query($connection, "SELECT * FROM `users` WHERE `username` = '$u
 </head>
 
 <body>
-<h2><a href="#" class="route_title"><?php echo $config['title'] ?></a></h2>
+<h2><a href="../index.php" class="route_title"><?php echo $config['title'] ?></a></h2>
 <div class="login">
     <h1>Login</h1>
     <form method="post">

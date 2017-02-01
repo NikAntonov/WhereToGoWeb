@@ -26,9 +26,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/jumbotron.css"/>
     <!-- Custom styles for this template -->
-    <link href="css/styles.css?t=07012017" rel="stylesheet"/>
-    <link href="css/styles.css" rel="stylesheet"/>
-    <link href="css/media.css?t=07012017" rel="stylesheet"/>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="css/media.css" rel="stylesheet"/>
+
+
+    <link href="css/set1" rel="stylesheet"/>
+
 
     <link rel="stylesheet" href="css/flickity.css" media="screen">
     <link rel="stylesheet" href="css/flickity.min.css" media="screen">
@@ -43,7 +47,6 @@
     <![endif]-->
 
 
-
 <body>
 
 <div class="navbar navbar-inverse navbar-fixed-top" id="custom-nav" role="navigation">
@@ -55,7 +58,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Route'N'Go</a>
+            <a class="navbar-brand" href="#header">Route'N'Go</a>
         </div>
         <div class="collapse navbar-collapse navbar-right custom-controls" id="controls">
             <ul class="nav navbar-nav">
@@ -67,22 +70,23 @@
     </div>
 </div>
 
-<header class="parallax-window" data-parallax="scroll" data-image-src="images/bg-jumbotron-mdf.jpg">
-<div class="jumbotron" id="jumbotron-main">
-    <div class="container">
-        <h1>Что это?</h1>
-        <p>Это один из самых невероятных способов узнать наш город</p>
-        <p><a class="bt-circle" href="#about">Узнать больше &raquo;</a></p>
+<header class="parallax-window" data-parallax="scroll" data-image-src="images/bg-jumbotron-mdf.jpg" id="header">
+    <div class="jumbotron" id="jumbotron-main">
+        <div class="container">
+            <h1>Что это?</h1>
+            <p>Это один из самых невероятных способов узнать наш город</p>
+            <p><a class="bt-circle" href="#about">Узнать больше</a></p>
+        </div>
     </div>
-</div>
 </header>
 <div class="container" id="about">
 
     <div class="starter-template">
 
         <div id="featured">
-            <h1 style="padding-bottom: 25px;">Калининград с совершенно новой точки зрения</h1>
-            <p class="lead" align="center" style="padding-bottom: 25px;">Наша цель - сделать отдых в Калининграде интересным и
+            <h1 style="padding-bottom: 25px; padding-top: 35px;"">Калининград с совершенно новой точки зрения</h1>
+            <p class="lead" align="center" style="padding-bottom: 25px;">Наша цель - сделать отдых в Калининграде
+                интересным и
                 захватывающим для жителей и гостей нашего города. Именно для этого мы и создаем наше приложение.
                 При помощи Route'N'Go вы всегда будете в курсе всех интересных мероприятий Калининграда, а также
                 сможете прогуляться по захватывающим местам, подобранным специально для вас!
@@ -125,7 +129,8 @@
                     </li>
                     <li>
                         <p class="lead"><b>Мультиязычность</b><br>
-                            Наше приложение полностью переведено на русский, английский, литовксий, польски и немецкий языки.
+                            Наше приложение полностью переведено на русский, английский, литовксий, польски и немецкий
+                            языки.
                         </p>
                     </li>
                     <li>
@@ -136,15 +141,17 @@
                     <p class="lead">...И многое другое!</p>
                 </ul>
             </div>
-        </div><br><br>
+        </div>
+        <br><br>
     </div>
 
 </div><!-- /.container -->
 
-<div class="jumbotron parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-workswith-mdf.jpg" >
+<div class="jumbotron parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-workswith-mdf.jpg">
     <div class="starter-template" id="tech">
         <h1 style="padding-bottom: 25px">Наша небольшая команда</h1>
-        <div class="main-carousel" style="padding-bottom: 25px" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="main-carousel" style="padding-bottom: 25px"
+             data-flickity='{ "cellAlign": "left", "contain": true }'>
             <div class="carousel-cell">
                 <div class="row">
                     <div class="col-sm-6">
@@ -153,7 +160,8 @@
                     <div class="col-sm-4">
                         <h2>Никита Антонов</h2>
                         <h4>Идея, Android & Web разработчик</h4>
-                        <p class="lead">Я отошлю немного задач завтра, отдохни пока что... Я сейчас на БалтАртеке... В Москве...
+                        <p class="lead">Я отошлю немного задач завтра, отдохни пока что... Я сейчас на БалтАртеке... В
+                            Москве...
                             В горах :)</p>
                     </div>
                 </div>
@@ -269,7 +277,8 @@
             <h1></h1>
             <p class="lead">Наше приложение сегодня активно разрабатывается для устройств на платформе Android, но нам
                 очень многое надо сделать прежде чем приложение увидит свет. Вы всегда можете присоединиться к нам в
-                команду и создавать вместе с нами самый иновационный гид по городу. Мы всегда открыты для сотрудничества :)</p>
+                команду и создавать вместе с нами самый иновационный гид по городу. Мы всегда открыты для сотрудничества
+                :)</p>
         </div>
 
     </div>
@@ -377,7 +386,9 @@
                                     <h5 class="modal-title">Пожертвовать</h5>
                                 </div>
                                 <div class="modal-body">
-                                    <iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?account=410013245041792&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%9D%D0%B0+%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5+Route'N'Go&target-visibility=on&project-name=Route'N'Go&project-site=routengo.pe.hu&button-text=05&fio=on&mail=on&phone=on&successURL=" width="422" height="117"></iframe>
+                                    <iframe frameborder="0" allowtransparency="true" scrolling="no"
+                                            src="https://money.yandex.ru/embed/donate.xml?account=410013245041792&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%9D%D0%B0+%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5+Route'N'Go&target-visibility=on&project-name=Route'N'Go&project-site=routengo.pe.hu&button-text=05&fio=on&mail=on&phone=on&successURL="
+                                            width="422" height="117"></iframe>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
@@ -397,9 +408,40 @@
 <div class="subscription">
     <!--#FF9800 active-->
     <!--#F90 hover-->
+<!--    #f8f8f8 bg -->
+    <div class="container">
+        <h1 align="center">БУДЬТЕ В КУРСЕ</h1>
+        <hr class="hr">
+        <p class="lead text-center" style="margin-top: 40px">Подпишитесь на нас в социальных сетях. Вы также можете
+            подписаться на нашу рассылку.<br>
+            Мы собираемся предоставить вам актуальную и важную для Вас информацию без спама.</p>
+        <div class="subline">
+            <div class="social-sub">
+                <a href="https://vk.com/routengo" target="_blank">
+                    <img src="icons/social/VK.png" class="social-icons">
+                </a>
+                <a href="https://www.facebook.com/groups/routengo/" target="_blank">
+                    <img src="icons/social/FB.png" class="social-icons">
+                </a>
+            </div>
+            <div class="sub_input">
+                <input type="text" class="sub-input" placeholder="Подписаться" />
+                <i class="fa fa-paper-plane-o fa-2" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
 
 
 </div>
+<!--<section class="content bgcolor-3">-->
+<!--    <h2>Kyo</h2>-->
+<!--    <span class="input input--kyo">-->
+<!--					<input class="input__field input__field--kyo" type="text" id="input-19" />-->
+<!--					<label class="input__label input__label--kyo" for="input-19">-->
+<!--						<span class="input__label-content input__label-content--kyo">What's your email?</span>-->
+<!--					</label>-->
+<!--				</span>-->
+<!--</section>-->
 
 <div class="bgsoon"></div>
 <div class="jumbotron" id="jumbotron-soon">
@@ -415,8 +457,25 @@
 <script src="js/google-analytics.min.js"></script>
 <script src="js/navbar-collapse.js"></script>
 <script src="js/parallax.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="https://use.fontawesome.com/5229f40f0b.js"></script>
 
-<script src="js/scroll-anchor.js"></script>
+<script>
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 
 <?php
