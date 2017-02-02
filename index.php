@@ -425,13 +425,24 @@
                 </a>
             </div>
             <div class="sub_input">
-                <input type="text" class="sub-input" placeholder="Подписаться" />
-                <i class="fa fa-paper-plane-o fa-2" aria-hidden="true"></i>
+                <input type="text" class="sub-input" placeholder="Введите эл. почту" />
+                <button id="thanks" type="submit"><img id="plane" src="icons/symbol.png" alt="Подписаться" /></button>
             </div>
         </div>
     </div>
+</div>
+<div class="modal fade" id="modal-thanks">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
-
+            <div class="modal-body">
+                <h1 align="center">Вы успешно подписались на рассылку!</h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">ОК</button>
+            </div>
+        </div>
+    </div>
 </div>
 <!--<section class="content bgcolor-3">-->
 <!--    <h2>Kyo</h2>-->
@@ -443,7 +454,9 @@
 <!--				</span>-->
 <!--</section>-->
 
-<div class="bgsoon"></div>
+<div class="bgsoon parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-contact-mdf.jpg">
+
+</div>
 <div class="jumbotron" id="jumbotron-soon">
 
 </div>
@@ -458,7 +471,9 @@
 <script src="js/navbar-collapse.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/classie.js"></script>
+<script src="js/script.js"></script>
 <script src="https://use.fontawesome.com/5229f40f0b.js"></script>
+
 
 <script>
     $(function () {
@@ -475,6 +490,7 @@
             }
         });
     });
+
 </script>
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 
