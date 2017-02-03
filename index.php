@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <title>Route'N'Go</title>
 
-
+    <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=gAEzopl0rd">
     <link rel="icon" type="image/png" href="/icons/favicon-32x32.png?v=gAEzopl0rd" sizes="32x32">
     <link rel="icon" type="image/png" href="/icons/favicon-16x16.png?v=gAEzopl0rd" sizes="16x16">
@@ -452,8 +452,8 @@
 <!--				</span>-->
 <!--</section>-->
 
-<div class="bgsoon parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-contact-mdf.jpg" style="text-align: center; padding: 40px">
-    <h1 style="color: white;">Скоро </h1><i class="fa fa-apple"></i><i class="fa fa-android"></i>
+<div class="bgsoon parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-contact-mdf.jpg" style="text-align: center; padding: 65px">
+    <h1 style="color: white;">Скоро <i class="fa fa-apple"></i> <i class="fa fa-android"></i></h1>
 </div>
 
 <!-- Bootstrap core JavaScript

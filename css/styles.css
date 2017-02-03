@@ -281,7 +281,7 @@ td {
   border-color: #ff9800;
 }
 .parallax-window {
-  min-height: 150px;
+  min-height: 200px;
   background: transparent;
     align-items: center;
 }
@@ -386,5 +386,10 @@ a:focus
 /*}*/
 #modal-thanks{
   padding-top: 300px;
+}
+
+div.bgsoon {
+  color: #ffffff;
+  font-size: 39px;
 }
 
