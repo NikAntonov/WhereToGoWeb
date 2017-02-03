@@ -273,135 +273,133 @@
 
     <div class="starter-template" id="download">
 
-        <div>
-            <h1></h1>
-            <p class="lead">Наше приложение сегодня активно разрабатывается для устройств на платформе Android, но нам
-                очень многое надо сделать прежде чем приложение увидит свет. Вы всегда можете присоединиться к нам в
-                команду и создавать вместе с нами самый иновационный гид по городу. Мы всегда открыты для сотрудничества
-                :)</p>
-        </div>
+        <h1>Пожертвования</h1>
+        <p class="lead">Наше приложение сегодня активно разрабатывается для устройств на платформе Android, но нам
+            очень многое надо сделать прежде чем приложение увидит свет. Вы всегда можете присоединиться к нам в
+            команду и создавать вместе с нами самый иновационный гид по городу. Мы всегда открыты для сотрудничества
+            :)</p>
 
-    </div>
-
-    <div class="container" style=" margin: auto">
-        <div class="row">
-            <div class="col-xs-12 col-md-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            Бронзовый</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h1>$1-4</h1>
+        <div class="container" style="align-content: center">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Бронзовый</h3>
                         </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    E-mail с благодарностью
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    Открытка
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    Наклейка с логотипом
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
+                        <div class="panel-body">
+                            <div class="the-price">
+                                <h1>$1-4</h1>
+                            </div>
+                            <table class="table">
+                                <tr class="active">
+                                    <td>
+                                        E-mail с благодарностью
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        Открытка
+                                    </td>
+                                </tr>
+                                <tr class="active panel-footer">
+                                    <td>
+                                        Наклейка с логотипом
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="panel-footer">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            Серебрянный</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h1>$3-6</h1>
+                <div class="col-xs-12 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Серебрянный</h3>
                         </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    E-mail с благодарностью
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    Открытка
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    Наклейка с логотипом
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
+                        <div class="panel-body">
+                            <div class="the-price">
+                                <h1>$3-6</h1>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        E-mail с благодарностью
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        Открытка
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        Наклейка с логотипом
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="panel-footer">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">
-                            Золотой</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="the-price">
-                            <h1>$6+</h1>
+                <div class="col-xs-12 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Золотой</h3>
                         </div>
-                        <table class="table">
-                            <tr>
-                                <td>
-                                    E-mail с благодарностью
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    Открытка
-                                </td>
-                            </tr>
-                            <tr class="active">
-                                <td>
-                                    Наклейка с логотипом
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                    </div>
-                    <div class="modal fade" id="modaldonate">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Пожертвовать</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe frameborder="0" allowtransparency="true" scrolling="no"
-                                            src="https://money.yandex.ru/embed/donate.xml?account=410013245041792&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%9D%D0%B0+%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5+Route'N'Go&target-visibility=on&project-name=Route'N'Go&project-site=routengo.pe.hu&button-text=05&fio=on&mail=on&phone=on&successURL="
-                                            width="422" height="117"></iframe>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+                        <div class="panel-body">
+                            <div class="the-price">
+                                <h1>$6+</h1>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        E-mail с благодарностью
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        Открытка
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        Наклейка с логотипом
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="panel-footer">
+                        </div>
+                        <div class="modal fade" id="modaldonate">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Пожертвовать</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" allowtransparency="true" scrolling="no"
+                                                src="https://money.yandex.ru/embed/donate.xml?account=410013245041792&quickpay=donate&payment-type-choice=on&default-sum=&targets=%D0%9D%D0%B0+%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5+Route'N'Go&target-visibility=on&project-name=Route'N'Go&project-site=routengo.pe.hu&button-text=05&fio=on&mail=on&phone=on&successURL="
+                                                width="422" height="117"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <a class="btn btn-success" role="button" data-toggle="modal" data-target="#modaldonate">Пожертвовать</a>
         </div>
 
-
-        <a class="btn btn-success" role="button" data-toggle="modal" data-target="#modaldonate">Пожертвовать</a>
     </div>
 
 </div>
@@ -454,11 +452,8 @@
 <!--				</span>-->
 <!--</section>-->
 
-<div class="bgsoon parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-contact-mdf.jpg">
-
-</div>
-<div class="jumbotron" id="jumbotron-soon">
-
+<div class="bgsoon parallax-window parallax" data-parallax="scroll" data-image-src="images/bg-contact-mdf.jpg" style="text-align: center; padding: 40px">
+    <h1 style="color: white;">Скоро </h1><i class="fa fa-apple"></i><i class="fa fa-android"></i>
 </div>
 
 <!-- Bootstrap core JavaScript
