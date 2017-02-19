@@ -1,4 +1,4 @@
-<?php require "/includes/config.php";
+<?php require "includes/config.php";
     if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
 {
     header("Location: /login.php");
@@ -29,7 +29,7 @@
     </head>
     <body>
     <?php
-    include "/includes/header.php";
+    include "includes/header.php";
     ?>
     <div class="main">
         <div class="container padding">

@@ -1,4 +1,4 @@
-<?php require "/includes/config.php";
+<?php require "includes/config.php";
 
 if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
 {

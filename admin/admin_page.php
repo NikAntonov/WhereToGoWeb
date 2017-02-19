@@ -1,4 +1,4 @@
-<?php require "/includes/config.php";
+<?php require "includes/config.php";
 
     if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false)
     {
@@ -30,7 +30,7 @@
 
 </head>
 <body>
-<?php include "/includes/header.php";
+<?php include "includes/header.php";
 
 
 $place_id = $_GET['id'];

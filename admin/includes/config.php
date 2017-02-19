@@ -3,7 +3,7 @@
     $config = array(
         'title' =>'Route\'N\'Go',
         'db' => array(
-            'server' => '185.28.21.143',
+            'server' => 'mysql.hostinger.web.tr',
             'username' => 'u203259231_admin',
             'password' => 'Qa93Ck7uvG8',
             'name' => 'u203259231_db'
