@@ -41,7 +41,7 @@ $place_id = $_GET['id'];
     <div class="container" id="list">
 
         <?php
-        $places = mysqli_query($connection, "SELECT `id`,`name`,`description`,`country` FROM `places` ORDER BY `id` DESC ");
+        $places = mysqli_query($connection, "SELECT `id`,`name`,`description`,`type` FROM `places` ORDER BY `id` DESC ");
         if (mysqli_num_rows($places) != 0){
         ?>
 
@@ -50,7 +50,7 @@ $place_id = $_GET['id'];
             <div id="js" class="col-md-3 id">id</div>
             <div class="col-md-3">Name</div>
             <div class="col-md-3">Description</div>
-            <div class="col-md-3">Country</div>
+            <div class="col-md-3">Type</div>
         </div>
 
 
@@ -71,7 +71,7 @@ $place_id = $_GET['id'];
                                 <div class="col-md-3" style="color: #0f0f0f"><?php echo $place['name'] ?></div>
                                 <div class="col-md-3"
                                      style="color: #0f0f0f"><?php echo mb_substr($place['description'], 0, 50, 'utf-8') ?></div>
-                                <div class="col-md-3" style="color: #0f0f0f"><?php echo $place['country'] ?></div>
+                                <div class="col-md-3" style="color: #0f0f0f"><?php echo $place['type'] ?></div>
                             </div>
                         </div>
                     </a>
@@ -87,6 +87,19 @@ $place_id = $_GET['id'];
             ?>
 
         </ul>
+        <div class="modal fade" id="modal-delete-all">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h1 align="center">Вы действительно хотите удалить ВСЕ места?</h1>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="bt-delete-all" type="button" class="btn btn-primary" data-dismiss="modal">ОК</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--    data-toggle="modal" data-target="#edit-modal"      --><?php
         //            include "includes/modal-window.php";

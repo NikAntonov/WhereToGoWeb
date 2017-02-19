@@ -389,18 +389,23 @@ include "includes/header.php";
                 }
 
 
-                if (isset($_POST['do_post'])) {
+                if (isset($_POST['do_post']))
+                {
                     mysqli_query($connection, "INSERT INTO `places` (`id`, `name`, `name_en`, `name_pl`, `name_de`, `name_lt`, `type`,
-                                                  `description`, `description_en`, `description_pl`, `description_de`, `description_lt`, 
-                                                  `country`, `country_en`, `country_pl`, `country_de`, `country_lt`, 
-                                                  `city`, `city_en`, `city_pl`, `city_de`, `city_lt`, 
+                                                  `description`, `description_en`, `description_pl`, `description_de`, `description_lt`,
+                                                  `country`, `country_en`, `country_pl`, `country_de`, `country_lt`,
+                                                  `city`, `city_en`, `city_pl`, `city_de`, `city_lt`,
                                                   `region`, `image_url`, `website_url`, `x_latLng`, `y_latLng`, `time`)
                     VALUES (NULL, '$name_add', '$name_add_en', '$name_add_pl', '$name_add_de', '$name_add_lt', '$type_add',
-                    '$description_add', '$description_add_en', '$description_add_pl', '$description_add_de', '$description_add_lt', 
-                    '$country_add', '$country_add_en', '$country_add_pl', '$country_add_de', '$country_add_lt', 
-                    '$city_add', '$city_add_en', '$city_add_pl', '$city_add_de', '$city_add_lt', 
+                    '$description_add', '$description_add_en', '$description_add_pl', '$description_add_de', '$description_add_lt',
+                    '$country_add', '$country_add_en', '$country_add_pl', '$country_add_de', '$country_add_lt',
+                    '$city_add', '$city_add_en', '$city_add_pl', '$city_add_de', '$city_add_lt',
                     '$region_add', '$image_url_add', '$website_url_add', '$x_latLng_add', '$y_latLng_add', '$time_add')");
-
+//                    addPlace($connection,$name_add, $name_add_en, $name_add_pl, $name_add_de, $name_add_lt, $type_add,
+//                        $description_add, $description_add_en, $description_add_pl, $description_add_de, $description_add_lt,
+//                        $country_add, $country_add_en, $country_add_pl, $country_add_de, $country_add_lt,
+//                        $city_add, $city_add_en, $city_add_pl, $city_add_de, $city_add_lt,
+//                        $region_add, $image_url_add, $website_url_add, $x_latLng_add, $y_latLng_add, $time_add);
                 }
                 ?>
                 <p id="success_message"></p>

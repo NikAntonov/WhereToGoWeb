@@ -17,5 +17,13 @@
     $('#thanks').on('click',function () {
         $('#modal-thanks').modal('show');
     });
+    $('#delete-all').on('click',function () {
+       $('#modal-delete-all').modal('show');
+       $.ajax({
+           type : 'POST',
+           url : 'delete-all.php',
+           data : 'DA=ok'
+       })
+    });
 
 

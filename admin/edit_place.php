@@ -1,5 +1,5 @@
 <?php require "includes/config.php";
-
+//        require "includes/Controller.php";
 
 if (!isset($_SESSION['loggedin']) || isset($_SESSION['loggedin']) == false) {
     header("Location: login.php");
@@ -47,10 +47,16 @@ $time = $_POST['time'];
 if (isset($_POST['do_edit'])) {
     mysqli_query($connection, "UPDATE `places` SET `name` = '$name', `name_en` = '$name_en', `name_pl` = '$name_pl', `name_de` = '$name_de', `name_lt` = '$name_lt', `type` = '$type',
                                   `description` = '$description', `description_en` = '$description_en', `description_pl` = '$description_pl', `description_de` = '$description_de', `description_lt` = '$description_lt',
-                                  `country` = '$country', `country_en` = '$country_en', `country_pl` = '$country_pl', `country_de` = '$country_de', `country_lt` = '$country_lt', 
-                                  `city` = '$city', `city_en` = '$city_en', `city_pl` = '$city_pl', `city_de` = '$city_de', `city_lt` = '$city_lt', 
-                                  `region` = '$region',`image_url` = '$image_url', `website_url` = '$website_url', `x_latLng` = '$x_latLng', `y_latLng` = '$y_latLng', `time` = '$time' 
+                                  `country` = '$country', `country_en` = '$country_en', `country_pl` = '$country_pl', `country_de` = '$country_de', `country_lt` = '$country_lt',
+                                  `city` = '$city', `city_en` = '$city_en', `city_pl` = '$city_pl', `city_de` = '$city_de', `city_lt` = '$city_lt',
+                                  `region` = '$region',`image_url` = '$image_url', `website_url` = '$website_url', `x_latLng` = '$x_latLng', `y_latLng` = '$y_latLng', `time` = '$time'
                                   WHERE `id` = '$place_id'");
+//    editPlace($connection,$name,$name_en,$name_pl,$name_de,$name_lt,$type,
+//        $description,$description_en,$description_pl,$description_de,$description_lt,
+//        $country,$country_en,$country_en,$country_en,$country_en,
+//        $city,$city_en,$city_pl,$city_de,$city_lt,
+//        $region,$image_url,$website_url,$x_latLng,$y_latLng,
+//        $time,$place_id);
 
     header("Location: login.php");
 }

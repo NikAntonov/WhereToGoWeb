@@ -426,4 +426,10 @@ h1{
               /*HEADER*/
 
 
-
+.close{
+  position: absolute;
+  left: 990px;
+}
+.close:hover{
+  color: #F90;
+}
