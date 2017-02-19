@@ -61,7 +61,7 @@
             margin-bottom: 30px;
         }
         #modaldonate{
-            padding-top: 100px;
+             padding-top: 100px;
         }
     </style>
 <body>
