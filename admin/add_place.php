@@ -92,7 +92,14 @@
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input name="type_add" placeholder="Type" class="form-control" type="text">
+<!--                                <input name="type_add" placeholder="Type" class="form-control" type="text">-->
+                                <select name="type_add" class="form-control" title="Choose one of the following...">
+                                    <option>history</option>
+                                    <option>shopping</option>
+                                    <option>nature</option>
+                                    <option>bar</option>
+                                    <option>football</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -382,12 +389,12 @@
 
 
                     if (isset($_POST['do_post'])) {
-                        mysqli_query($connection, "INSERT INTO `places` (`id`, `name`, `name_en`, `name_pl`, `name_de`, `name_lt`, `type`
+                        mysqli_query($connection, "INSERT INTO `places` (`id`, `name`, `name_en`, `name_pl`, `name_de`, `name_lt`, `type`,
                                                   `description`, `description_en`, `description_pl`, `description_de`, `description_lt`, 
                                                   `country`, `country_en`, `country_pl`, `country_de`, `country_lt`, 
                                                   `city`, `city_en`, `city_pl`, `city_de`, `city_lt`, 
                                                   `region`, `image_url`, `website_url`, `x_latLng`, `y_latLng`, `time`)
-                    VALUES (NULL, '$name_add', '$name_add_en', '$name_add_pl', '$name_add_de', '$name_add_lt', '$type_add'
+                    VALUES (NULL, '$name_add', '$name_add_en', '$name_add_pl', '$name_add_de', '$name_add_lt', '$type_add',
                     '$description_add', '$description_add_en', '$description_add_pl', '$description_add_de', '$description_add_lt', 
                     '$country_add', '$country_add_en', '$country_add_pl', '$country_add_de', '$country_add_lt', 
                     '$city_add', '$city_add_en', '$city_add_pl', '$city_add_de', '$city_add_lt', 

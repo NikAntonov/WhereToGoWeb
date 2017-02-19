@@ -17,7 +17,7 @@ $name_pl = $_POST['name_pl'];
 $name_de = $_POST['name_de'];
 $name_lt = $_POST['name_lt'];
 
-$type = $_POST['type'];
+$type = $_POST['type_add'];
 
 $description = $_POST['description'];
 $description_en = $_POST['description_en'];
@@ -139,12 +139,21 @@ include "includes/header.php";
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Tag</label>
+                    <label class="col-md-4 control-label">Type</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="type" placeholder="Tag" class="form-control" type="text"
-                            value="<?php echo $place_edit['type']; ?>">
+                            <!--                                <input name="type_add" placeholder="Type" class="form-control" type="text">-->
+                            <select name="type_add" class="form-control" title="Не выбрано...">
+                                <?php
+                                $types = mysqli_query($connection, "SELECT * FROM `types`");
+                                while ($typess = mysqli_fetch_assoc($types)){
+                                    ?>
+                                    <option <?php if ($place_edit['type'] == $typess['name']) echo ' selected '?> ><?php echo $typess['name']; ?></option>
+                                 <?php
+                                }
+                                ?>
+                            </select>
                         </div>
                     </div>
                 </div>
