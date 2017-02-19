@@ -46,7 +46,24 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+    <style type="text/css">
+        .panel-heading{
+            background: #ff9800 !important;
+        }
+        .table{
+            height: 200px !important;
+        }
+        .row{
+            padding:0 !important;
+            margin:0 !important;
+        }
+        .donate{
+            margin-bottom: 30px;
+        }
+        #modaldonate{
+            padding-top: 100px;
+        }
+    </style>
 <body>
 
 <div class="navbar navbar-inverse navbar-fixed-top" id="custom-nav" role="navigation">
@@ -281,7 +298,7 @@
 
         <div class="container" style="align-content: center">
             <div class="row">
-                <div class="col-xs-12 col-md-4">
+                <div class="col-md-4">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -299,12 +316,12 @@
                                 </tr>
                                 <tr class="active">
                                     <td>
-                                        Открытка
+
                                     </td>
                                 </tr>
                                 <tr class="active panel-footer">
                                     <td>
-                                        Наклейка с логотипом
+
                                     </td>
                                 </tr>
                             </table>
@@ -313,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-md-4">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -324,7 +341,7 @@
                                 <h1>$3-6</h1>
                             </div>
                             <table class="table">
-                                <tr>
+                                <tr class="active">
                                     <td>
                                         E-mail с благодарностью
                                     </td>
@@ -336,7 +353,7 @@
                                 </tr>
                                 <tr class="active">
                                     <td>
-                                        Наклейка с логотипом
+
                                     </td>
                                 </tr>
                             </table>
@@ -345,7 +362,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-md-4">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -356,8 +373,8 @@
                                 <h1>$6+</h1>
                             </div>
                             <table class="table">
-                                <tr>
-                                    <td>
+                                <tr class="active">
+                                    <td >
                                         E-mail с благодарностью
                                     </td>
                                 </tr>
@@ -397,7 +414,7 @@
             </div>
 
 
-            <a class="btn btn-success" role="button" data-toggle="modal" data-target="#modaldonate">Пожертвовать</a>
+            <a class="btn btn-primary donate" role="button" data-toggle="modal" data-target="#modaldonate">Пожертвовать</a>
         </div>
 
     </div>

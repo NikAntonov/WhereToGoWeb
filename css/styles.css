@@ -27,10 +27,22 @@ li#controls {
   background-color: #ff9800;
   border-color: #fb8c00;
 }
-.btn-primary:hover{
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   background-color: #f57c00;
   border-color: #ef6c00;
+}
+.panel-heading{
+  background: #ff9800 !important;
+}
+.table{
+  height: 200px !important;
+}
+.row{
+  padding:0 !important;
+  margin:0 !important;
 }
 a:hover.btn-primary, #button-input {
   background-color: #f57c00;
@@ -391,5 +403,11 @@ a:focus
 div.bgsoon {
   color: #ffffff;
   font-size: 39px;
+}
+#modaldonate{
+  padding-top: 100px;
+}
+.donate{
+  margin-bottom: 40px;
 }
 
