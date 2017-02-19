@@ -147,10 +147,10 @@ include "includes/header.php";
                             <select name="type_add" class="form-control" title="Не выбрано...">
                                 <?php
                                 $types = mysqli_query($connection, "SELECT * FROM `types`");
-                                while ($typess = mysqli_fetch_assoc($types)){
+                                while ($typess = mysqli_fetch_assoc($types)) {
                                     ?>
-                                    <option <?php if ($place_edit['type'] == $typess['name']) echo ' selected '?> ><?php echo $typess['name']; ?></option>
-                                 <?php
+                                    <option <?php if ($place_edit['type'] == $typess['name']) echo ' selected ' ?>><?php echo $typess['name']; ?></option>
+                                    <?php
                                 }
                                 ?>
                             </select>
